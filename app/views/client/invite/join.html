@@ -7,7 +7,7 @@
 {% block main %}
 <div class="flex justify-center items-center flex-col mt-12 mb-3 space-y-6">
     <img style="width: 150px;" src="/static/img/wizard.png" alt="logo"></span>
-    <h1 class="text-2xl font-semibold text-center text-gray-900 dark:text-white">{{ _("Type in your invite code to %(name)s server!", name=server_name) }}</h1>
+    <h1 class="text-2xl font-semibold text-center text-gray-900 dark:text-white">{{ _("Je bent uitgenodigd voor %(name)!", name=server_name) }}</h1>
 </div>
 <section>
     <div class="flex flex-col items-center justify-center md:container py-8 mx-auto">
@@ -17,7 +17,7 @@
                     <form onsubmit="event.preventDefault(); joinServer(this);" class="space-y-4 md:space-y-6">
                         <div>
                             <label for="code" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                {{ _("Invite Code") }}
+                                {{ _("Geheime uitnodigingscode") }}
                             </label>
 
                             <input type="code" name="code" id="code" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="XMFGEJI" required>
